@@ -69,6 +69,14 @@ img.animated.pulse {
     margin-bottom: 0;
 }
 
+.offer-countdown-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin-bottom: .75rem;
+}
+
 .offer-limited-label {
     color: #a7d18f;
     font-size: 1.1rem;
@@ -85,8 +93,71 @@ img.animated.pulse {
 
 @media (max-width: 575.98px) {
     .offer-modal-dialog {
-        width: 75vw;
-        max-width: 75vw;
+        width: min(90vw, 72vh);
+        max-width: min(90vw, 72vh);
+        margin: auto;
+    }
+
+    .offer-modal {
+        height: auto;
+    }
+
+    .offer-modal .modal-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #offerCarousel {
+        flex: 0 0 auto;
+    }
+
+    #offerCarousel .carousel-inner {
+        height: auto;
+    }
+
+    #offerCarousel .carousel-item.active {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .offer-image {
+        height: auto;
+        width: 100%;
+        flex: 0 0 auto;
+        object-fit: contain;
+    }
+
+    .offer-caption {
+        min-height: 0;
+        padding: 4px 12px 6px;
+    }
+
+    .offer-caption p {
+        font-size: .7rem;
+    }
+
+    .offer-details {
+        padding: 5px 8px 8px !important;
+    }
+
+    .offer-countdown-row {
+        gap: .35rem;
+        margin-bottom: .4rem;
+    }
+
+    .offer-limited-label {
+        font-size: .75rem;
+    }
+
+    .offer-countdown {
+        font-size: .8rem;
+        letter-spacing: 0;
+    }
+
+    .offer-details .btn {
+        padding: .4rem .65rem;
+        font-size: .75rem;
     }
 }
 
